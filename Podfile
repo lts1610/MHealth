@@ -8,10 +8,11 @@ target 'MHealth' do
   pod 'RxSwift'
   pod 'ReachabilitySwift'
   pod 'AlamofireObjectMapper'
-#  pod 'SugarRecord'
-#  pod 'SugarRecord/CoreData+RX'
   pod 'MagicalRecord'
-#  pod 'MJExtension'
+  pod 'SwiftOverlays'
+  pod 'RxMKMapView'
+  pod 'RxPermission'
+  pod 'ChameleonFramework'
 
   target 'MHealthTests' do
     inherit! :search_paths

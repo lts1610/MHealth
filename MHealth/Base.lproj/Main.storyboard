@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--API2-->
+        <!--Region-->
         <scene sceneID="5u5-to-V1z">
             <objects>
                 <viewController id="pjK-HP-QHY" customClass="RegionViewController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,15 +14,32 @@
                         <viewControllerLayoutGuide type="bottom" id="nbL-aU-S2D"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iVO-1D-cO5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Fr-15-6we">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pjK-HP-QHY" id="U4i-w9-c4h"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nbL-aU-S2D" firstAttribute="top" secondItem="2Fr-15-6we" secondAttribute="bottom" id="1Yk-LL-53Z"/>
+                            <constraint firstItem="2Fr-15-6we" firstAttribute="top" secondItem="iVO-1D-cO5" secondAttribute="top" id="7NJ-ls-2sL"/>
+                            <constraint firstItem="2Fr-15-6we" firstAttribute="leading" secondItem="iVO-1D-cO5" secondAttribute="leading" id="ZwG-ZP-BtP"/>
+                            <constraint firstAttribute="trailing" secondItem="2Fr-15-6we" secondAttribute="trailing" id="xGb-kN-EZ2"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="API2" id="cvE-T9-syH"/>
+                    <navigationItem key="navigationItem" title="Region" id="zZu-23-t6i"/>
+                    <connections>
+                        <outlet property="mapView" destination="2Fr-15-6we" id="BkT-YT-rKv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTs-0e-cFe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1140" y="1241"/>
+            <point key="canvasLocation" x="1952" y="1241"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dOs-pQ-r2R">
@@ -35,7 +52,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ZCM-b3-X4J" kind="relationship" relationship="viewControllers" id="Cco-vV-qbK"/>
-                        <segue destination="pjK-HP-QHY" kind="relationship" relationship="viewControllers" id="O8N-mx-OAu"/>
+                        <segue destination="fsv-W5-UpS" kind="relationship" relationship="viewControllers" id="O8N-mx-OAu"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xf-CS-h6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,7 +78,7 @@
             </objects>
             <point key="canvasLocation" x="1140" y="580"/>
         </scene>
-        <!--Doctor View Controller-->
+        <!--Doctors-->
         <scene sceneID="ZIR-pc-RG3">
             <objects>
                 <tableViewController id="EkD-d0-KgY" customClass="DoctorViewController" customModule="MHealth" customModuleProvider="target" sceneMemberID="viewController">
@@ -100,11 +117,30 @@
                             <outlet property="delegate" destination="EkD-d0-KgY" id="keq-0w-v1K"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9ep-8Z-xxN"/>
+                    <navigationItem key="navigationItem" title="Doctors" id="9ep-8Z-xxN"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="brg-I3-IQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1888" y="496"/>
+        </scene>
+        <!--API2-->
+        <scene sceneID="6xY-Jp-xSq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fsv-W5-UpS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="API2" id="cvE-T9-syH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="I8l-8H-tVo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="pjK-HP-QHY" kind="relationship" relationship="rootViewController" id="z0m-Cl-voU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YsO-lt-abW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1140" y="1241"/>
         </scene>
     </scenes>
 </document>

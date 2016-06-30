@@ -3,34 +3,57 @@ PODS:
   - AlamofireObjectMapper (3.0.0):
     - Alamofire (~> 3.2)
     - ObjectMapper (~> 1.0)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
   - ObjectMapper (1.3.0)
+  - Permission (1.4.2)
   - ReachabilitySwift (2.3.3)
   - RxAlamofire (2.5):
     - RxAlamofire/Core (= 2.5)
   - RxAlamofire/Core (2.5):
     - Alamofire (~> 3.4)
     - RxSwift (~> 2.5)
+  - RxCocoa (2.5.0):
+    - RxSwift (~> 2.5)
+  - RxMKMapView (2.1.0):
+    - RxCocoa (~> 2)
+    - RxSwift (~> 2)
+  - RxPermission (0.1.2):
+    - Permission (~> 1.2)
+    - RxSwift (~> 2.4)
   - RxSwift (2.5.0)
+  - SwiftOverlays (2.0.1)
 
 DEPENDENCIES:
   - AlamofireObjectMapper
+  - ChameleonFramework
   - MagicalRecord
   - ReachabilitySwift
   - RxAlamofire
+  - RxMKMapView
+  - RxPermission
   - RxSwift
+  - SwiftOverlays
 
 SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   AlamofireObjectMapper: 2d16585d06177be0116d76de73497e77437798af
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   ObjectMapper: 4eb08a726e9791a93b2632049951b56a7c17e471
+  Permission: e7e1c2555ffe8726a0c28e04799fe973116e5b3f
   ReachabilitySwift: e0f6b6f280effb47731acfaaa2d5ffe223703793
   RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
+  RxCocoa: e1b1562e57a554d0fb2aabf9d71b637f177257c7
+  RxMKMapView: 13035c88d8c9212caca7bd4c70b52a2866084d77
+  RxPermission: 32baa051351e2c3a0260106154aaff6579f5ce25
   RxSwift: 402b41a50e922a0368fc14cb3bc9f4427920e8ae
+  SwiftOverlays: 317afbb3eeb7f9d8545b1e6592500c89aadb6d8f
 
-PODFILE CHECKSUM: 3242a14732d00c90327a9e4522774d98747b043d
+PODFILE CHECKSUM: a764aadb8eb674d0395b5740f03b0ff35c6fc353
 
 COCOAPODS: 1.0.0

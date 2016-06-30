@@ -14,12 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ChameleonFramework.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Permission.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -44,7 +54,32 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxMKMapView-RxMKMapView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxMKMapView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxPermission.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftOverlays.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,22 +87,62 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>274DDAC3E833796F66CE549EEB8614D0</key>
+		<key>1ABDC9A945CD108EEA0F06355D1D9BF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4ED9B3AC2B537AC8E2D563212F9CB140</key>
+		<key>2BB823C86343C0E981AB1ED9693E26C4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C1A2BA41C8BE796983F3BC92E2F36B0</key>
+		<key>39759609C3E7FA3B50DB56B507916FBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3B0260F469F573C7EA05C0FF84AEC767</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C52EB375004D377DD14943D71E6A008</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C63008F8F1262E9979B892A2ED0A164</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5FA347A88274963E9252A95520C50142</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>817EEEB82AB13C7AA987FCF7327E482E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B57F4EE4746045CEAE2D933A3C8EC9E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B753A4D4766ACF5C2D8CB2BA5631B0C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AE72CC7F4D6F67D05BD754600113E143</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -78,11 +153,6 @@
 			<true/>
 		</dict>
 		<key>D58D76EC529B4A92F3E5EDADE0A96661</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D820BBC8B30678F0B1825234366AE3BC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

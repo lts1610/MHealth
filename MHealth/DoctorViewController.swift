@@ -11,6 +11,8 @@ import RxSwift
 import RxAlamofire
 import ObjectMapper
 import MagicalRecord
+import ReachabilitySwift
+import SwiftOverlays
 
 class DoctorViewController: UITableViewController {
     
@@ -20,34 +22,59 @@ class DoctorViewController: UITableViewController {
             self.tableView.reloadData()
         }
     }
+    lazy var reachability = try! Reachability.reachabilityForInternetConnection()
     
-    lazy var indicatorView: UIActivityIndicatorView = {
-        
-        let indicator = UIActivityIndicatorView(activityIndicatorStyle: .White)
-        indicator.hidesWhenStopped = true
-        indicator.startAnimating()
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: indicator)
-        return indicator
-    }()
+    deinit{
+        reachability.stopNotifier()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.indicatorView.startAnimating()
-        getDoctors()
+//        observeNetwork()
+        self.getDoctors()
+
+    }
+    
+    func observeNetwork() {
+        reachability.whenReachable = { reachability in
+            dispatch_async(dispatch_get_main_queue(), {
+                if reachability.isReachableViaWiFi(){
+                    self.showTextOverlay("Required on celular network")
+                }else{
+                    self.getDoctors()
+                }
+            })
+        }
+        
+        reachability.whenUnreachable = { reachability in
+            dispatch_async(dispatch_get_main_queue(), {
+                self.showTextOverlay("Please check your network")
+            })
+        }
+        
+        do {
+            try reachability.startNotifier()
+        } catch {
+            print("Unable to start notifier")
+        }
     }
     
     func getDoctors(){
         
+        ///Cancel previous requests if needs
+//        APIProvider.shareProvider.session.invalidateAndCancel()
+        
+        self.showWaitOverlayWithText("Please wait...")
+        ///
         APIProvider.shareProvider.rx_JSON(MHealthAPI.Doctors.method, MHealthAPI.Doctors)
         .observeOn(MainScheduler.instance)
         .debug()
         .subscribe {[weak self] (event) in
             switch event{
             case .Next:
-                print(event.element?.valueForKey("data"))
-                self?.datasource = Mapper<DoctorModel>().mapArray(event.element?.valueForKey("data")) ?? []
                 
-                //Import doctors
+                self?.datasource = Mapper<DoctorModel>().mapArray(event.element?.valueForKey("data")) ?? []
+            
                 guard let data = event.element?.valueForKey("data") as? [[NSObject: AnyObject]] else{
                     return
                 }
@@ -55,10 +82,12 @@ class DoctorViewController: UITableViewController {
                     DoctorModel.MR_importFromArray(data, inContext: context)
                 }) { (done, error) in
                     print("save done with: " + (error?.localizedDescription ?? "no error"))
+                    print(DoctorModel.MR_findAll())
                 }
                 
+                ///
             case .Completed:
-                self?.indicatorView.stopAnimating()
+                self?.removeAllOverlays()
                 break
             case .Error:
                 print(event.error)
@@ -68,10 +97,6 @@ class DoctorViewController: UITableViewController {
         .addDisposableTo(disposeBag)
     }
     
-    @IBAction func saveDoctors(sender: AnyObject?){
-        
-        
-    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1

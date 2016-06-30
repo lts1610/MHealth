@@ -18,6 +18,7 @@ struct APIProvider {
             config.URLCache = nil
             config.timeoutIntervalForRequest = 60
             config.HTTPAdditionalHeaders = Manager.defaultHTTPHeaders
+            config.sharedContainerIdentifier = "com.MHealth.app"
             
             return config
         }()

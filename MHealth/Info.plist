@@ -36,5 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>This application requires location services to checking region</string>
 </dict>
 </plist>

@@ -14,15 +14,11 @@
 		35F04E831D24BA250044331A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F04E811D24BA250044331A /* LaunchScreen.storyboard */; };
 		35F04E8E1D24BA250044331A /* MHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04E8D1D24BA250044331A /* MHealthTests.swift */; };
 		35F04E991D24BC9E0044331A /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04E981D24BC9E0044331A /* RegionViewController.swift */; };
-		35F04E9B1D24C1060044331A /* DatasourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04E9A1D24C1060044331A /* DatasourceType.swift */; };
 		35F04EA11D24C76A0044331A /* APIType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EA01D24C76A0044331A /* APIType.swift */; };
 		35F04EA31D24D1360044331A /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EA21D24D1360044331A /* APIProvider.swift */; };
-		35F04EA81D24DE7B0044331A /* RegionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EA71D24DE7B0044331A /* RegionViewModel.swift */; };
-		35F04EAA1D24DE870044331A /* DoctorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EA91D24DE870044331A /* DoctorViewModel.swift */; };
 		35F04EAC1D24DED60044331A /* DoctorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EAB1D24DED60044331A /* DoctorModel.swift */; };
 		35F04EAE1D24E1820044331A /* RegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EAD1D24E1820044331A /* RegionModel.swift */; };
 		35F04EB11D2505980044331A /* MHealth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EAF1D2505980044331A /* MHealth.xcdatamodeld */; };
-		35F04EB31D25112F0044331A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F04EB21D25112F0044331A /* Result.swift */; };
 		B3E6D6FE32C631C45920BF49 /* Pods_MHealth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7AF23224FB98C66F8DE0268 /* Pods_MHealth.framework */; };
 		DB4718ECF8195D19C29D1F58 /* Pods_MHealthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8636FD28E51C9CE9FC3C7C3F /* Pods_MHealthTests.framework */; };
 /* End PBXBuildFile section */
@@ -50,15 +46,11 @@
 		35F04E8D1D24BA250044331A /* MHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MHealthTests.swift; sourceTree = "<group>"; };
 		35F04E8F1D24BA250044331A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35F04E981D24BC9E0044331A /* RegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionViewController.swift; sourceTree = "<group>"; };
-		35F04E9A1D24C1060044331A /* DatasourceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatasourceType.swift; sourceTree = "<group>"; };
 		35F04EA01D24C76A0044331A /* APIType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIType.swift; sourceTree = "<group>"; };
 		35F04EA21D24D1360044331A /* APIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
-		35F04EA71D24DE7B0044331A /* RegionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionViewModel.swift; sourceTree = "<group>"; };
-		35F04EA91D24DE870044331A /* DoctorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorViewModel.swift; sourceTree = "<group>"; };
 		35F04EAB1D24DED60044331A /* DoctorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorModel.swift; sourceTree = "<group>"; };
 		35F04EAD1D24E1820044331A /* RegionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionModel.swift; sourceTree = "<group>"; };
 		35F04EB01D2505980044331A /* MHealth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MHealth.xcdatamodel; sourceTree = "<group>"; };
-		35F04EB21D25112F0044331A /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		8315B50B5F18438FBDEA6251 /* Pods-MHealth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHealth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHealth/Pods-MHealth.debug.xcconfig"; sourceTree = "<group>"; };
 		8636FD28E51C9CE9FC3C7C3F /* Pods_MHealthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7AF23224FB98C66F8DE0268 /* Pods_MHealth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHealth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,8 +151,6 @@
 		35F04E9F1D24C6ED0044331A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				35F04E9A1D24C1060044331A /* DatasourceType.swift */,
-				35F04EB21D25112F0044331A /* Result.swift */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -169,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				35F04E981D24BC9E0044331A /* RegionViewController.swift */,
-				35F04EA71D24DE7B0044331A /* RegionViewModel.swift */,
 				35F04EAD1D24E1820044331A /* RegionModel.swift */,
 			);
 			name = Region;
@@ -179,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				35F04E7A1D24BA250044331A /* DoctorViewController.swift */,
-				35F04EA91D24DE870044331A /* DoctorViewModel.swift */,
 				35F04EAB1D24DED60044331A /* DoctorModel.swift */,
 			);
 			name = Doctor;
@@ -414,15 +402,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35F04EA81D24DE7B0044331A /* RegionViewModel.swift in Sources */,
-				35F04E9B1D24C1060044331A /* DatasourceType.swift in Sources */,
 				35F04E7B1D24BA250044331A /* DoctorViewController.swift in Sources */,
 				35F04E791D24BA250044331A /* AppDelegate.swift in Sources */,
 				35F04E991D24BC9E0044331A /* RegionViewController.swift in Sources */,
 				35F04EA11D24C76A0044331A /* APIType.swift in Sources */,
-				35F04EB31D25112F0044331A /* Result.swift in Sources */,
 				35F04EA31D24D1360044331A /* APIProvider.swift in Sources */,
-				35F04EAA1D24DE870044331A /* DoctorViewModel.swift in Sources */,
 				35F04EAC1D24DED60044331A /* DoctorModel.swift in Sources */,
 				35F04EB11D2505980044331A /* MHealth.xcdatamodeld in Sources */,
 				35F04EAE1D24E1820044331A /* RegionModel.swift in Sources */,
