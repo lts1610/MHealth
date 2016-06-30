@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+final class DoctorViewModel: NSObject, DatasourceType{
+    var datasource: [DoctorModel] = []
+}

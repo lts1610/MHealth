@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
-    <elements/>
+    <entity name="DoctorModel" representedClassName="DoctorModel" syncable="YES">
+        <attribute name="available" optional="YES" attributeType="Boolean" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="doctor_available"/>
+            </userInfo>
+        </attribute>
+        <attribute name="doctorId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="doctor_id"/>
+            </userInfo>
+        </attribute>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="doctor_name"/>
+            </userInfo>
+        </attribute>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="doctor_type"/>
+            </userInfo>
+        </attribute>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES">
+            <userInfo>
+                <entry key="mappedKeyName" value="avatar_url"/>
+            </userInfo>
+        </attribute>
+    </entity>
+    <elements>
+        <element name="DoctorModel" positionX="-63" positionY="-18" width="128" height="120"/>
+    </elements>
 </model>
