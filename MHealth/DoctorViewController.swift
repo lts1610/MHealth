@@ -30,8 +30,7 @@ class DoctorViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        observeNetwork()
-        self.getDoctors()
+        observeNetwork()
 
     }
     
